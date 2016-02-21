@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+	<title>日历</title>
+	<meta charset ="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/index.css">
+	<script type="text/javascript" src="public/scripts/index.js"></script>
+</head>
+<body>
+	<div class="head">
+		<div class="title1">iCold</div>
+		<div class="title2">日历<span class="xiala"></span>
+		</div>
+		<div class="head_date">
+			<div class="pre" id="pre"></div>
+			<div class="date" id='title'></div>
+			<div class="next" id="next"></div>
+		</div>
+		<div class="help"></div>
+	</div>
+
+	<div class="solidBar">
+		<div class="left">
+			<div class="top" id="top"></div>
+			<div class="bottom" id="bottom">2015年11月23日 星期一</div>
+		</div>
+		<div class="right">
+			<div class="weekday">
+				<div class="item">周一</div>
+				<div class="item">周二</div>
+				<div class="item">周三</div>
+				<div class="item">周四</div>
+				<div class="item">周五</div>
+				<div class="item">周六</div>
+				<div class="item">周日</div>
+			</div>
+			<div class="num" id="num">
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items color"></div>
+				<div class="items color"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items color"></div>
+				<div class="items color"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items color"></div>
+				<div class="items color"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items color"></div>
+				<div class="items color"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items color"></div>
+				<div class="items color"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items"></div>
+				<div class="items color"></div>
+				<div class="items color"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="time" id="time">
+		<div class="unique1">
+			<div class="change" id="change">星期一</div>
+			<div class="culine"></div>
+		</div>
+		<div class="unique2">
+			<div class="quantian">全天</div>
+			<div class="culine"></div>
+			
+		</div>
+		<div class="kuang">
+			<div class="all" id="all"></div>
+			<!-- <div class="picture one" id="first"></div>
+			<div class="picture two" id="second"></div>	
+			<div class="picture three" id="third"></div>	 -->	
+
+
+			<div class="chang">
+				<div class="hong" id="hong">
+					<div class="specific" id="specific"></div>
+					<div class="circle"></div>
+					<div class="hongline"></div>
+				</div>
+				<div class="kuai">
+					<div class="xuline"></div>
+					<div class="shiline"></div>
+					<div class="word">1</div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">2</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">3</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">4</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">5</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">6</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">7</div>
+					<div class="shiline"li></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">8</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">9</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">10</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">11</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">中午</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">1</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">2</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">3</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">4</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">5</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">6</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">7</div>
+					<div class="shiline"li></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">8</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">9</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">10</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">11</div>
+					<div class="shiline"></div>
+					<div class="xuline"></div>
+				</div>
+				<div class="kuai">
+					<div class="word">0</div>
+					<div class="shiline"></div>
+					<!-- <div class="xuline"></div> -->
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="even">无事件</div>
+
+	<div class="footer">
+		<div class="seeting"></div>
+		<div class="foward_date" id="foward_date">前往今天</div>
+		<div class="type">
+			<div class="book"></div>
+			<div class="center">
+				<div class="xiao everyday">日</div>
+				<div class="xiao">月</div>
+				<div class="xiao">年</div>
+			</div>
+			<div class="load"></div>
+		</div>
+		<div class="other"></div>
+	</div>
+
+
+	<div id="dada">
+		<div id="close"></div>
+	</div>
+
+
+</body>
+</html>
